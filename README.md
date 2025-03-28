@@ -25,20 +25,32 @@ O website foi desenvolvido para:
 Cores Principais:
 
 Azul Marinho (#003366)
-
 Dourado (goldenrod)
-
 Azul Claro (#5D86B5)
-
 Fonte Principal: Montserrat (600, 700)
 
-✨ Recursos Especiais
-Responsive Menu que adapta-se a diferentes tamanhos de tela
+## ✨ Recursos Especiais
 
-WhatsApp Botão flutuante para atendimento rápido
+<div align="center">
 
-Services Seção de serviços oferecidos
+### 📱 Menu Responsivo
+![Responsivo](https://img.shields.io/badge/Responsivo-Sim-success?style=flat-square&logo=responsive-design&logoColor=white)  
+Adapta-se automaticamente a qualquer tamanho de tela
 
-Google Maps Mapa interativo da localização
+### 💬 WhatsApp Rápido
+![WhatsApp](https://img.shields.io/badge/WhatsApp-Botão_Flutuante-25D366?style=flat-square&logo=whatsapp&logoColor=white)  
+Atendimento direto pelo WhatsApp com um clique
 
-Instagram Feed integrado
+### 🛁 Nossos Serviços
+![Serviços](https://img.shields.io/badge/Serviços-Completo-FFA500?style=flat-square&logo=services&logoColor=white)  
+Todos os serviços oferecidos detalhados
+
+### 📍 Localização
+![Google Maps](https://img.shields.io/badge/Google_Maps-Interativo-4285F4?style=flat-square&logo=google-maps&logoColor=white)  
+Mapa interativo com a localização da loja
+
+### 📸 Redes Sociais
+![Instagram](https://img.shields.io/badge/Instagram-Feed-E4405F?style=flat-square&logo=instagram&logoColor=white)  
+Feed do Instagram integrado ao site
+
+</div>
