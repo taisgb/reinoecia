@@ -13,7 +13,7 @@
 }
 
 
-/* ----- NOVOS ESTILOS PARA O MENU ----- */
+/* -----  MENU ----- */
 .navbar {
   padding: 15px 0;
   transition: all 0.3s;
@@ -80,6 +80,16 @@
   .navbar {
       padding: 10px 0;
   }
+
+    @media (max-width: 992px) {
+  .navbar-collapse {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-top: 10px;
+  }
+}
   
   .navbar-nav {
       background: rgba(255,255,255,0.98);
