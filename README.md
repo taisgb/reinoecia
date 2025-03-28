@@ -31,7 +31,7 @@ Fonte Principal: Montserrat (600, 700)
 
 ## ✨ Recursos Especiais
 
-<div align="center">
+<div align="left">
 
 ### 📱 Menu Responsivo
 ![Responsivo](https://img.shields.io/badge/Responsivo-Sim-success?style=flat-square&logo=responsive-design&logoColor=white)  
