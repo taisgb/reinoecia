@@ -1,0 +1,608 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MontSerrat';
+    
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+}
+
+
+/* ----- NOVOS ESTILOS PARA O MENU ----- */
+.navbar {
+  padding: 15px 0;
+  transition: all 0.3s;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  color: #000080 !important;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin: 0 5px;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.nav-link i {
+  font-size: 1.2rem;
+  width: 24px;
+  text-align: center;
+  transition: all 0.3s;
+  color: #000080;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: goldenrod !important;
+}
+
+.nav-link:hover i,
+.nav-link:focus i {
+  transform: scale(1.1);
+  color: goldenrod;
+}
+
+/* Efeito de sublinhado */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: goldenrod;
+  transition: all 0.3s;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 60%;
+}
+
+/* Menu ativo */
+.nav-link.active {
+  font-weight: 600;
+}
+
+.nav-link.active i {
+  color: goldenrod;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .navbar {
+      padding: 10px 0;
+  }
+  
+  .navbar-nav {
+      background: rgba(255,255,255,0.98);
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .nav-link {
+      padding: 10px 15px !important;
+      margin: 3px 0;
+  }
+  
+  .nav-link::after {
+      bottom: 2px;
+  }
+}
+
+
+.banner-escrito{
+  width: 100%;
+}
+
+.marca {
+  text-decoration:solid;
+  color: goldenrod;
+  font-weight: bold;
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+  }
+  .whatsapp-float img {
+    width: 60px;
+    transition: transform 0.3s;
+  }
+  .whatsapp-float img:hover {
+    transform: scale(1.1);
+  }
+ 
+  .cor1{
+    background-color: #5D86B5;
+    color: white;
+  }
+
+  .cor2 {
+    background-color: white;
+    color: #003366;
+  }
+
+  .titulos {
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    text-shadow: #5D86B5;
+
+/*     margin-top: 20px;
+    margin-bottom: 20px; */
+  }
+
+  .cor1, .cor2 {
+    margin: 0 !important;
+    padding: 40px 0;
+  }
+
+ /* ===== SEÇÃO SOBRE ===== */
+.sobre {
+  position: relative;
+  padding: 80px 0;
+  z-index: 1;
+}
+
+.sobre::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: -1;
+}
+
+.sobre .container {
+  position: relative;
+  z-index: 2;
+}
+
+.titulos {
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.texto-sobre {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.marca {
+  color: goldenrod;
+  font-weight: 700;
+}
+
+/* Diferenciais */
+.lista-diferenciais {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 25px;
+}
+
+.lista-diferenciais li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #003366;
+}
+
+.lista-diferenciais li::before {
+  content: '\f00c';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: goldenrod;
+  font-size: 1.2rem;
+}
+
+/* Horário de Funcionamento */
+.horario-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
+  border-left: 4px solid goldenrod;
+}
+
+.horario-title {
+  color: #003366;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.horario-title i {
+  color: goldenrod;
+}
+
+.horario-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.horario-item:last-child {
+  border-bottom: none;
+}
+
+.horario-item span:first-child {
+  color: #555;
+}
+
+.horario-item span:last-child {
+  color: #003366;
+  font-weight: 600;
+}
+
+/* Botão Agende Agora */
+.btn-agende-sobre {
+  display: inline-flex;
+  align-items: center;
+  background-color: goldenrod;
+  color: #003366;
+  padding: 12px 35px;
+  font-weight: 700;
+  border-radius: 50px;
+  border: 2px solid #003366;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin-top: 40px;
+  box-shadow: 0 4px 15px rgba(218, 165, 32, 0.3);
+  text-decoration: none;
+}
+
+.btn-agende-sobre:hover {
+  background-color: #003366;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 51, 102, 0.3);
+  border-color: goldenrod;
+}
+
+.btn-agende-sobre i {
+  margin-right: 10px;
+  font-size: 1.1rem;
+  transition: transform 0.3s;
+}
+
+.btn-agende-sobre:hover i {
+  transform: scale(1.2);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .sobre {
+      padding: 60px 0;
+      background-attachment: scroll;
+  }
+  
+  .titulos {
+      font-size: 2rem;
+  }
+  
+  .texto-sobre {
+      font-size: 1rem;
+      text-align: left;
+  }
+  
+  .btn-agende-sobre {
+      padding: 10px 25px;
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre {
+      padding: 50px 0;
+  }
+  
+  .horario-container {
+      padding: 20px;
+  }
+  
+  .lista-diferenciais li {
+      font-size: 0.95rem;
+  }
+}
+
+/*SERVIÇOS */
+
+/* SERVIÇOS - Estilo Clássico */
+.servicos {
+  background-image: url('/img/bg2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.texto-servicos {
+  width: 45%;
+  margin-left: auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.93);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.servico-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-servicos {
+  color: #003366;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.servico-item h3 {
+  color: goldenrod;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.servico-item p {
+  color: #003366;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .servicos {
+      background-size: cover;
+  }
+  
+  .texto-servicos {
+      width: 90%;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.95);
+  }
+}
+
+@media (max-width: 768px) {
+  .texto-servicos {
+      width: 100%;
+      padding: 20px;
+  }
+}
+
+/* AGENDE */
+
+/* Estilos de validação */
+/* #hora.is-invalid {
+  border-color: #dc3545;
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+#hora.is-valid {
+  border-color: #28a745;
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #dc3545;
+}
+
+.is-invalid ~ .invalid-feedback {
+  display: block;
+}
+ */
+ 
+
+/* CONTADO */
+
+/*   .contato {
+    padding: 4px;
+  }
+
+  .wp1 img{
+    width: 30px;
+    height: 30px;
+  }
+ */
+
+/* Estilos para a seção de contato */
+.contato-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  height: 100%;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #eee;
+}
+
+.contato-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* Cores específicas para cada tipo de contato */
+.whatsapp .contato-icon { background: #25D366; }
+.telefone .contato-icon { background: #5D86B5; }
+.email .contato-icon { background: #D44638; }
+.instagram .contato-icon { 
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+}
+
+/* Estilos para ícones sociais */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.social-icon.instagram { color: #E1306C; }
+.social-icon.facebook { color: #3b5998; }
+.social-icon.tiktok { color: #000; }
+
+.social-icon.instagram:hover { background: #E1306C; color: white; }
+.social-icon.facebook:hover { background: #3b5998; color: white; }
+.social-icon.tiktok:hover { background: #000; color: white; }
+
+/* Embed do Instagram */
+.instagram-embed {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .instagram-embed {
+      height: 400px;
+  }
+  
+  .contato-item {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .contato-icon {
+      margin-bottom: 10px;
+  }
+}
+
+
+
+
+  /*RODAPÉ */
+ .footer {
+  background-color: rgb(223, 216, 216);
+  padding: 30px 0;
+}
+
+.logo-footer {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav-bottom {
+  color: #003366;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+  font-size: 16px;
+}
+
+.nav-bottom:hover {
+  color: goldenrod;
+}
+
+.footer-credits {
+  text-align: right;
+  font-size: 14px;
+}
+
+.logo-gb {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+.logo-gb:hover {
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer .row {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .footer-links {
+      flex-direction: column;
+      gap: 10px;
+      margin: 15px 0;
+  }
+  
+  .footer-credits {
+      text-align: center;
+      margin-top: 15px;
+  }
+}

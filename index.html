@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <title>Reino Animal & Cia</title>
+</head>
+
+<body>
+<div class="menu-toggle">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <img src="/img/logo.png" alt="logo" class="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#banner">
+                        <i class="fas fa-home me-1"></i> Início
+                    </a>
+                    <a class="nav-link" href="#sobre">
+                        <i class="fas fa-paw me-1"></i> Sobre
+                    </a>
+                    <a class="nav-link" href="#servicos">
+                        <i class="fas fa-concierge-bell me-1"></i> Serviços
+<!--                     </a>
+                    <a class="nav-link" href="#agendamento">
+                        <i class="far fa-calendar-check me-1"></i> Agende Agora
+                    </a> -->
+                    <a class="nav-link" href="#contato">
+                        <i class="fas fa-phone-alt me-1"></i> Contato
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+     <div class="botaowhats"></div>
+        <a href="https://wa.me/5571999536561" class="btn whatsapp-float">
+            <img src="/img/whats.png" alt="" srcset="">
+        </a>
+ <div class="banner" id="banner"></div>
+    <div class="img-topo">
+        <img src="/img/bg_gif.gif" alt="" srcset="" class="banner-escrito">         
+</div>
+
+<div class="sobre cor2" id="sobre">
+    <div class="container">
+        <h1 class="titulos">Sobre Nós</h1>
+        
+        <div class="row">
+            <div class="col-lg-7">
+                <p class="texto-sobre">
+                    <span class="marca">Reino Animal & Cia</span> nasceu com a missão de proporcionar o melhor cuidado para os nossos amiguinhos de quatro patas. Desde o início, nos dedicamos a oferecer serviços de qualidade em um ambiente acolhedor, com uma equipe especializada que entende as necessidades dos animais.
+                </p>
+                
+                <ul class="lista-diferenciais">
+                    <li>Profissionais certificados e capacitados</li>
+                    <li>Produtos 100% seguros e testados</li>
+                    <li>Ambiente higienizado e livre de estresse</li>
+                    <li>Atendimento personalizado para cada pet</li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-5">
+                <div class="horario-container">
+                    <h4 class="horario-title">
+                        <i class="far fa-clock"></i> Horário de Funcionamento
+                    </h4>
+                    <div class="horario-item">
+                        <span>Loja:</span>
+                        <span>07:30 às 19:00</span>
+                    </div>
+                    <div class="horario-item">
+                        <span>Banho e Tosa:</span>
+                        <span>07:30 às 17:00</span>
+                    </div>
+                    <div class="horario-item">
+                        <span>Dias:</span>
+                        <span>Segunda à Sábado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <a href="https://wa.me/5571999536561" class="btn-agende-sobre">
+                <i class="fas fa-calendar-alt"></i> Agende Agora
+            </a>
+        </div>
+    </div>
+</div>
+<div class="servicos cor1" id="servicos">
+    <div class="container">
+        <h2 class="titulos mb-4">Nossos Serviços</h2>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="servico-item">
+                    <h3>Tosa e Banho</h3>
+                    <p>Oferecemos serviços de banho e tosa com todo o cuidado e carinho.</p>
+                </div>
+                
+                <div class="servico-item">
+                    <h3>Taxi Dog</h3>
+                    <p>Transporte seguro para seu pet, nós buscamos seu pet para o banho.</p>
+                </div>
+                
+                <div class="servico-item">
+                    <h3>Venda de Rações e Acessórios</h3>
+                    <p>Dispomos de uma vasta linha de rações e acessórios de qualidade para o bem-estar do seu animal.</p>
+                </div>
+                
+                <div class="servico-item">
+                    <h3>Entrega de Produtos</h3>
+                    <p>Oferecemos a comodidade de entregar rações e acessórios diretamente em sua casa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <section id="agendamento" class="py-5 cor2">
+    <div class="container">
+        <h2 class="titulos mb-5">Agendamento</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form id="whatsappForm" class="form-agendamento">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nome" class="form-label">Nome Completo*</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="telefone" class="form-label">WhatsApp*</label>
+                            <input type="tel" class="form-control" id="telefone" required
+                                   placeholder="+55 (71) 99999-9999 ou 71999999999">
+                            <div id="telefoneError" class="invalid-feedback">
+                                Digite 11 dígitos (DDD + número) com ou sem +55.
+                            </div>
+                        </div>
+
+                    <div class="mt-3">
+                        <label for="pet" class="form-label">Nome do Pet*</label>
+                        <input type="text" class="form-control" id="pet" required>
+                    </div>
+
+                    <div class="mt-3">
+                        <label for="servico" class="form-label">Serviço Desejado*</label>
+                        <select class="form-select" id="servico" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="Banho e Tosa">Banho e Tosa</option>
+                            <option value="Táxi Dog">Táxi Dog</option>                            
+                        </select>
+                    </div>
+
+                    <div class="row g-3 mt-3">
+                        <div class="col-md-6">
+                            <label for="data" class="form-label">Data*</label>
+                            <input type="date" class="form-control" id="data" required>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="hora" class="form-label">Horário Preferencial*</label>
+                                <input type="text" 
+                                       class="form-control" 
+                                       id="hora" 
+                                       placeholder="Ex: 14:30 ou 08:00" 
+                                       required
+                                       pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]">
+                                <small class="form-text text-muted">Formato: HH:MM (24 horas)</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 text-center">
+                        <button type="submit" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp me-2"></i> Enviar para WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section> -->
+<div class="contato cor2" id="contato">
+    <div class="container">
+        <h2 class="titulos mb-5">Entre em Contato</h2>
+        
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="contato-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Endereço</h3>
+                    <p>Rua 2 de Julho, nº 31A, São Cristóvão<br>Salvador - BA</p>
+                    
+                    <div class="horario-contato">
+                        <h4><i class="far fa-clock"></i> Horário de Funcionamento</h4>
+                        <ul>
+                            <li><span>Loja:</span> 07:30 às 19:00</li>
+                            <li><span>Banho e Tosa:</span> 07:30 às 17:00</li>
+                            <li><span>Dias:</span> Segunda à Sábado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="contato-card">
+                    <h3><i class="fas fa-phone-alt"></i> Contato Direto</h3>
+                    
+                    <div class="contato-item whatsapp">
+                        <div class="contato-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contato-info">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/5571999536561" target="_blank" rel="noopener">(71) 99953-6561</a>
+                            <a href="https://wa.me/5571993076115" target="_blank" rel="noopener">(71) 99307-6115</a>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="contato-item telefone">
+                        <div class="contato-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contato-info">
+                            <h4>Telefone Fixo</h4>
+                            <a href="tel:+557132224455">(71) 3222-4455</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contato-item email">
+                        <div class="contato-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contato-info">
+                            <h4>E-mail</h4>
+                            <a href="mailto:contato@reinoanimalecia.com.br">contato@reinoanimalecia.com.br</a>
+                        </div>
+                    </div> -->
+                    
+                    <div class="contato-item instagram">
+                        <div class="contato-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contato-info">
+                            <h4>Instagram</h4>
+                            <a href="https://www.instagram.com/pet_shopgarden" target="_blank" rel="noopener">
+                                @pet_shopgarden
+                            </a>
+                            <small class="instagram-follow">Siga-nos para novidades!</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!--         <div class="redes-sociais mt-5">
+            <div class="social-icons text-center">
+                <a href="https://www.instagram.com/pet_shopgarden" class="social-icon instagram" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon facebook" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon tiktok" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div> -->
+            
+            <div class="instagram-embed mt-4">
+                <iframe src="https://www.instagram.com/pet_shopgarden/embed" 
+                        width="100%" 
+                        height="480" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        allowtransparency="true"
+                        style="border-radius: 8px;"></iframe>
+            </div>
+        </div>
+        
+        <div class="mapa-container mt-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.436700157348!2d-38.428839185349116!3d-12.998604693105527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71602db78fc3c9b%3A0x7f6a35cfd58a8658!2sRua%202%20de%20Julho%2C%2031A%2C%20S%C3%A3o%20Crist%C3%B3v%C3%A3o%2C%20Salvador%20-%20BA!5e0!3m2!1spt-BR!2sbr!4v1685100807622!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 8px;" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Coluna da Logo -->
+                <div class="col-md-3">
+                    <img src="/img/logo.png" alt="Logo Reino Animal & Cia" class="logo-footer">
+                </div>
+                
+                <!-- Coluna dos Links Menu foot -->
+                <div class="col-md-6">
+                    <div class="footer-links">
+                        <a class="nav-bottom" href="#banner">Início</a>
+                        <a class="nav-bottom" href="#sobre">Sobre</a>
+                        <a class="nav-bottom" href="#servicos">Serviços</a>
+                        <a class="nav-bottom" href="#contato">Contato</a>
+                    </div>
+                </div>
+                
+                <!-- Coluna do Crédito -->
+                <div class="col-md-3">
+                    <div class="footer-credits">
+                        <p>Desenvolvido por 
+                            <a href="https://www.instagram.com/taisbomfim">
+                                <img src="/img/logo-gb.png" alt="GB Produções" class="logo-gb">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/form-whatsapp.js"></script -->
+</body>
+
+</html>
+
+
