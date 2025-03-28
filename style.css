@@ -338,7 +338,7 @@
 
 /* SERVIÇOS - Estilo Clássico */
 .servicos {
-  background-image: url('/img/bg2.png');
+  background-image: url('img/bg2.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
